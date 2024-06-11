@@ -13,6 +13,3 @@ cp /usr/local/etc/php/conf.d/xdebug.ini /tmp/xdebug.ini
 sed -i 's/^/;/g' /tmp/xdebug.ini
 cp -f /tmp/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 rm /tmp/xdebug.ini
-
-# start server
-php artisan serve --port=8573
