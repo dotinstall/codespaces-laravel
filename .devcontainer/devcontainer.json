@@ -1,0 +1,20 @@
+{
+    "name": "Laravel Codespaces Container",
+    "image": "mcr.microsoft.com/devcontainers/php:8.3",
+    "postCreateCommand": "chmod +x .devcontainer/postCreateCommand.sh && .devcontainer/postCreateCommand.sh",
+    "portsAttributes": {
+        "8573": {
+          "label": "Application",
+          "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [8573],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "editorconfig.editorconfig",
+                "onecentlin.laravel-blade"
+            ]
+        }
+    }
+}
