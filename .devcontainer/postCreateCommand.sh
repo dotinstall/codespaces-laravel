@@ -5,7 +5,7 @@ php artisan key:generate
 touch database/database.sqlite
 php artisan migrate
 sudo apt-get update
-sudo apt-get install sqlite3
+sudo apt-get install -y sqlite3
 
 # invalidate xdebug
 sudo chmod 777 /usr/local/etc/php/conf.d/xdebug.ini
